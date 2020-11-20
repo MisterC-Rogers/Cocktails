@@ -287,12 +287,12 @@ Form
   box-shadow: var(--lightShadow);
 }
 
-.form-control label {
-  display: block;
+.form-control h4 {
   margin-bottom: 1.25rem;
   font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-size: 26px;
   color: var(--primaryColor);
+  text-align: center;
 }
 .form-control input {
   width: 100%;
@@ -302,6 +302,29 @@ Form
   border-radius: var(--mainBorderRadius);
   padding: 0.5rem;
   font-size: 1.2rem;
+}
+.radios {
+  margin-top: 10px;
+}
+.radios p {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  color: var(--primaryColor);
+}
+.upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.radio {
+  margin-right: 3px;
 }
 /* 
 ====== 

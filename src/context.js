@@ -15,7 +15,6 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(`${url}${searchType}${searchTerm}`)
       const data = await response.json()
-      console.log(data);
       const { drinks } = data
       if (drinks) {
         const newCocktails = drinks.map((item) => {
@@ -47,7 +46,6 @@ const AppProvider = ({ children }) => {
   }, [searchTerm, searchType])
   
   useEffect(() => {
-    console.log('searchType', searchType)
     fetchDrinks()
   }, [searchTerm, fetchDrinks, searchType])
   
